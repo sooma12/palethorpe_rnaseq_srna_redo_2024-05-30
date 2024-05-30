@@ -1,0 +1,31 @@
+[2024-05-30 15:54:42,336] multiqc                                            [DEBUG  ]  This is MultiQC v1.21
+[2024-05-30 15:54:42,339] multiqc                                            [DEBUG  ]  Command used: /work/geisingerlab/conda_env/multiQC/bin/multiqc ./ --ignore software/ --ignore ref/ --ignore data/rawreads/ --ignore data/trimmed/
+[2024-05-30 15:54:42,714] multiqc                                            [WARNING]  MultiQC Version v1.22.1 now available!
+[2024-05-30 15:54:42,714] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.22.1, released 2024-05-17
+[2024-05-30 15:54:42,714] multiqc                                            [DEBUG  ]  Working dir : /work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30
+[2024-05-30 15:54:42,715] multiqc                                            [DEBUG  ]  Template    : default
+[2024-05-30 15:54:42,715] multiqc                                            [DEBUG  ]  Running Python 3.11.8 | packaged by conda-forge | (main, Feb 16 2024, 20:53:32) [GCC 12.3.0]
+[2024-05-30 15:54:42,715] multiqc                                            [DEBUG  ]  Ignoring files, directories and paths that match: software/, ref/, data/rawreads/, data/trimmed/
+[2024-05-30 15:54:42,716] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ccs, ngsderive, purple, conpair, isoseq, lima, peddy, somalier, methylqa, mosdepth, phantompeakqualtools, qualimap, bamdst, preseq, hifiasm, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, sambamba, gopeaks, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dragen_fastqc, dedup, pbmarkdup, damageprofiler, mapdamage, biobambam2, jcvi, mtnucratio, picard, vep, bakta, prokka, qc3C, nanostat, samblaster, samtools, sexdeterrmine, seqera_cli, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, umitools, truvari, megahit, bbmap, bismark, biscuit, diamond, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, cellranger, snpsplit, odgi, pangolin, nextclade, freyja, humid, kat, leehom, librarian, nonpareil, adapterRemoval, bbduk, clipandmerge, cutadapt, flexbar, sourmash, kaiju, bracken, kraken, malt, motus, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, filtlong, prinseqplusplus, pychopper, porechop, pycoqc, minionqc, anglerfish, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap, spaceranger, xenome, xengsort, metaphlan, seqwho
+[2024-05-30 15:54:42,716] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmp4rwk2s53
+[2024-05-30 15:54:42,726] multiqc                                            [INFO   ]  Search path : /work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30
+[2024-05-30 15:54:43,963] multiqc                                            [DEBUG  ]  Summary of files that were skipped by the search: [skipped_module_specific_max_filesize: 269] // [skipped_no_match: 78] // [skipped_ignore_pattern: 8] // [skipped_directory_fn_ignore_dirs: 4]
+[2024-05-30 15:54:44,051] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2024-05-30 15:54:44,065] multiqc.modules.featureCounts.feature_counts       [INFO   ]  Found 6 reports
+[2024-05-30 15:54:44,066] multiqc.utils.util_functions                       [DEBUG  ]  Wrote data file multiqc_featureCounts.txt
+[2024-05-30 15:54:44,798] multiqc.modules.star.star                          [INFO   ]  Found 6 reports
+[2024-05-30 15:54:44,799] multiqc.utils.util_functions                       [DEBUG  ]  Wrote data file multiqc_star.txt
+[2024-05-30 15:54:45,050] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 12 reports
+[2024-05-30 15:54:45,051] multiqc.utils.util_functions                       [DEBUG  ]  Wrote data file multiqc_fastqc.txt
+[2024-05-30 15:54:45,460] multiqc.plots.plotly.heatmap                       [DEBUG  ]  Resizing from 450x540 to fit the maximum size 900x500
+[2024-05-30 15:54:45,460] multiqc.plots.plotly.heatmap                       [DEBUG  ]  Heatmap size: 900x500, px per element: 90.00x41.67
+[2024-05-30 15:54:45,521] multiqc.utils.software_versions                    [DEBUG  ]  Reading software versions from config.software_versions
+[2024-05-30 15:54:45,527] multiqc.utils.util_functions                       [DEBUG  ]  Wrote data file multiqc_software_versions.txt
+[2024-05-30 15:54:45,565] multiqc.utils.util_functions                       [DEBUG  ]  Wrote data file multiqc_general_stats.txt
+[2024-05-30 15:54:45,566] multiqc                                            [DEBUG  ]  Compressing plot data
+[2024-05-30 15:54:45,794] multiqc.utils.util_functions                       [DEBUG  ]  Wrote data file multiqc_data.json
+[2024-05-30 15:54:45,796] multiqc                                            [INFO   ]  Report      : multiqc_report.html
+[2024-05-30 15:54:45,797] multiqc                                            [INFO   ]  Data        : multiqc_data
+[2024-05-30 15:54:45,797] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp4rwk2s53/multiqc_data' to '/work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30/multiqc_data'
+[2024-05-30 15:54:45,846] multiqc                                            [DEBUG  ]  Full report path: /work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30/multiqc_report.html
+[2024-05-30 15:54:46,341] multiqc                                            [INFO   ]  MultiQC complete
