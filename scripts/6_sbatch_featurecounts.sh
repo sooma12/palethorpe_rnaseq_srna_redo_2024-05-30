@@ -4,8 +4,8 @@
 #SBATCH --time=02:00:00
 #SBATCH -N 1
 #SBATCH -n 4
-#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/logs/%x-%j.log
-#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/logs/%x-%j.err
+#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30/logs/%x-%j.log
+#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30/logs/%x-%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=soo.m@northeastern.edu
 
@@ -25,5 +25,5 @@ featureCounts \
 -a $GENOME_GTF \
 -o $COUNTS_OUTDIR/$COUNTS_FILE \
 -p \
--t transcript \
+-t sRNA \
 $STAR_MAPPED_DIR/*.bam

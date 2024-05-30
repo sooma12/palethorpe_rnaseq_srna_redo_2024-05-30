@@ -6,8 +6,8 @@
 #SBATCH --ntasks=9
 #SBATCH --mem=100G
 #SBATCH --cpus-per-task=1
-#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/logs/%x-%j-%a.log
-#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/logs/%x-%j-%a.err
+#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30/logs/%x-%j-%a.log
+#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30/logs/%x-%j-%a.err
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=soo.m@northeastern.edu
 

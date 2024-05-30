@@ -4,12 +4,12 @@
 #SBATCH --time=02:00:00
 #SBATCH -N 1
 #SBATCH -n 4
-#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/stationary_phase_palethorpe_forNER_2024-03-04/full_genome_rnaseq/logs/%x-%j.log
-#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/stationary_phase_palethorpe_forNER_2024-03-04/full_genome_rnaseq/logs/%x-%j.err
+#SBATCH --output=/work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30/logs/%x-%j.log
+#SBATCH --error=/work/geisingerlab/Mark/rnaSeq/palethorpe_sRNAs_fixed_2024-05-30/logs/%x-%j.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=soo.m@northeastern.edu
 
-## Usage: sbatch 3_sbatch_starGenomeGenerate.sh
+## Usage: sbatch scripts/3_sbatch_starGenomeGenerate.sh
 
 echo "loading tools for STAR genomeGenerate"
 module load star/2.7.11a
@@ -34,6 +34,6 @@ STAR --runMode genomeGenerate \
 --genomeDir $GENOME_REF_DIR \
 --genomeFastaFiles "${fasta_files[@]}" \
 --sjdbGTFfile $GENOME_GTF \
---sjdbGTFfeatureExon transcript \
+--sjdbGTFfeatureExon sRNA \
 --genomeSAindexNbases 9 \
 --runThreadN $NTHREADS
